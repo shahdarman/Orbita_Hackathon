@@ -29,7 +29,7 @@ class CustomTextField extends StatelessWidget {
       child: TextFormField(
         style: TextStyle(
             color: AppColor.textColor,
-            fontSize: 10
+            fontSize: 20
         ),
         controller: controller,
         obscureText:hideInput,

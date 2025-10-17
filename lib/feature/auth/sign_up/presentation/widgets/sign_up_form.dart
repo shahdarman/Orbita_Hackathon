@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:orbita_hackathon/feature/auth/login/presentation/widgets/login_form.dart';
 import 'package:orbita_hackathon/feature/auth/sign_up/presentation/screen/sign_up_screen.dart';
 import 'package:orbita_hackathon/feature/auth/sign_up/presentation/widgets/social_login_divider.dart';
+import 'package:orbita_hackathon/feature/home/presentation/screen/home_page.dart';
 
 import '../../../../../config/navigation/navigation.dart';
 import '../../../../../core/utils/strings/app_strings.dart';
@@ -94,6 +95,8 @@ class SignUpForm extends StatelessWidget {
                     onTap: () {
                       if (_formKey.currentState!.validate()) {
                         log(AppStrings.orLoginWith);
+                        PushNavigation().navigation(context: context, screen: HomePage());
+
                        // AuthCubit.get(context).singUp(
                           //  userName: _nameController.text,
                           //  email:_emailController.text,

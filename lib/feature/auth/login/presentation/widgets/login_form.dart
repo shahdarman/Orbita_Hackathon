@@ -6,6 +6,7 @@ import 'package:orbita_hackathon/core/utils/color/app_color.dart';
 import 'package:orbita_hackathon/core/utils/widgets/custom_text.dart';
 import 'package:orbita_hackathon/feature/auth/reset_password/presentation/screen/reset_screen.dart';
 import 'package:orbita_hackathon/feature/auth/sign_up/presentation/screen/sign_up_screen.dart';
+import 'package:orbita_hackathon/feature/home/presentation/screen/home_page.dart';
 
 import '../../../../../config/navigation/navigation.dart';
 import '../../../../../core/utils/strings/app_strings.dart';
@@ -71,6 +72,7 @@ class LoginForm extends StatelessWidget {
                     width: 295,
                     onTap: () {
                       if (_formKey.currentState!.validate()) {
+                        PushNavigation().navigation(context: context, screen: HomePage());
 
                       }
                     },

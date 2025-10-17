@@ -41,4 +41,5 @@ class AppStrings {
   static const String uploadingFileStatement="Drag & drop or browser to upload ";
   static const String onlycsv="Only CSV files";
   static const String meesegeupload="A preview of your uploaded data will appear here once a file is selected ";
+  static const String  exoplanetFinder=" Exoplanet Finder  ";
 }
